@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <style>
+        body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./3.jpg);
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    color: azure;
+        }
+    
+    </style>
+</head>
+<body>
+    <main>
+    <h1 class="quote">
+        <a href="./index.html">
+        💕Love Calculator💕
+    </a>
+    </h1>
+    <br>
+    <section>
+        <label for="fname">Your Name : </label>
+        <input type="text" name="fname" id="fname"> <br>  <br>
+        <label for="fname">Crush Name:</label>
+        <input type="text" name="sname" id="sname"> <br> <br>
+        <button id="submit"> Check </button>  
+    </section>
+</main>
+
+<article class="modal-container" id="modal">
+    <div class="modal">
+        <h1>Your Love Stats</h1>
+        <div class="names">
+          <span> 👑</span> <span id="fname-c">Peter</span> and <span id="sname-c">Gwen</span> <span> 👑</span>
+        </div>
+        <div class="percentages">
+            💝Chances = <span id="per">50%</span>
+        </div>
+        <div class="status">
+            Status : <span id="status"></span>
+        </div>
+        <div id="result">
+            Best
+        </div>
+        <div class="controllers">
+            <a href="https://swarupvishwas18.github.io/swarup-vishwas/" target="_blank">
+                <button>
+                    About Me
+                </button>
+            </a>
+            <button id="close-btn">
+                Close
+            </button>
+        </div>
+    </div>
+</article>
+    <script src="./app.js"></script>
+</body>
+</html>
