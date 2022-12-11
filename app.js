@@ -15,16 +15,7 @@ document.querySelector('#submit').addEventListener('click', function(){
         alert('Do not give me Empty Names..!!');
         return;
     }
-    if(fname.toLowerCase()=='swarup' || sname.toLowerCase()=='swarup'){
-        document.querySelector('#fname-c').textContent = fname;
-        document.querySelector('#sname-c').textContent = sname;
-        document.querySelector('#per').textContent = '0%';
-        var status = '💔';
-        document.querySelector('#status').textContent = status;
-        document.querySelector('#result').textContent = "He is very busy man.";
-        document.querySelector('#modal').style.display = 'flex';
-        return;
-    }
+  
     fetch(`https://love-calculator.p.rapidapi.com/getPercentage?sname=${sname}&fname=${fname}`, options)
 	.then(response => response.json())
 	.then(response => {
